@@ -1,0 +1,22 @@
+syntax on
+set shortmess+=I number relativenumber hlsearch incsearch ignorecase smartcase
+
+" Remapping shift+ZA to :q
+:vnoremap <s-z><s-a> :q<cr>
+:nnoremap <s-z><s-a> :q<cr>
+
+" Enable global clipboard from/to vim
+set clipboard=unnamedplus
+
+" How to tab
+set tabstop=4
+set shiftwidth=4
+
+" Provides tab-completion for all file-related tasks
+set path+=**
+
+" Display tab completion suggestions below
+set wildmenu
+
+" Indent mod
+set autoindent
