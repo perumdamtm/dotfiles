@@ -1,0 +1,14 @@
+set hintchars neiotsraluypfwqmvcxzhdjgkb
+set scrollduration 199
+unbind <F1>
+unbind gf
+set hintnames simple
+set hintuppercase false
+unbind <S-Escape>
+set searchurls {"ddg":"https://duckduckgo.com/?q=","yt":"https://www.youtube.com/results?search_query=","ivd":"https://yewtu.be/search?q=","aur":"https://aur.archlinux.org/packages?O=0&K=","dw":"https://distrowatch.com/table.php?distribution="}
+bind gd tabdetach
+bind gD composite tabduplicate; tabdetach
+bind ;C composite hint_focus; !s xdotool key Menu
+bind ;m composite hint -pipe img src | js -p tri.excmds.open("https://yandex.com/images/search?rpt=imageview&url=" + JS_ARG)
+bind --mode=normal ;u hint -F e => { const pos = tri.dom.getAbsoluteCentre(e); tri.excmds.exclaim_quiet("xdotool mousemove --sync " + window.devicePixelRatio * pos.x + " " + window.devicePixelRatio * pos.y)}
+bind --mode=normal ;U hint -F e => { const pos = tri.dom.getAbsoluteCentre(e); tri.excmds.exclaim_quiet("xdotool mousemove --sync " + window.devicePixelRatio * pos.x + " " + window.devicePixelRatio * pos.y + "; xdotool click 1")}
