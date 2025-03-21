@@ -1,0 +1,16 @@
+*,div,pre,textarea,body,input,td,tr,p {
+	background-color: #32302f !important;
+	background-image: none !important;
+	color: #ebdbb2 !important;
+}
+h1,h2,h3,h4 {
+	background-color: #32302f !important;
+	color: #ebdbb2 !important;
+}
+img {
+	opacity: .7;
+}
+img:hover {
+	opacity: 1;
+}
+
