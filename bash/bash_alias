@@ -1,4 +1,4 @@
-alias asdf='setxkbmap -variant colemak && xset r 66 && xset r rate 191'
+alias asdf='setxkbmap -variant dvorak && xset r 66 && xset r rate 191'
 alias arst='setxkbmap -variant ,'
 alias reboot='sudo reboot'
 alias shutdown='sudo shutdown'
