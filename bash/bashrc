@@ -4,11 +4,19 @@ export HISTSIZE=999999
 export HISTTIMEFORMAT='%F %T '
 shopt -s histappend  # append history without overwriting
 
+# Bash history autocomplete
+bind '"\e[A": history-search-backward'
+
+# I LOVE VI
+export VISUAL=vim
+export EDITOR="$VISUAL"
+set -o vi
+
 # Force prompt to write history after every command.
 PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 
 # cd into work
-cd ~/work
+# cd ~/work
 
 # source .bash_aliases
 if [ -f $HOME/.bash_aliases ]
