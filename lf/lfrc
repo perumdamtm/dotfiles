@@ -1,0 +1,3 @@
+set icons
+set previewer '~/.config/lf/previewer'
+set cleaner '~/.config/lf/cleaner'
