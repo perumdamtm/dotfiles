@@ -1,0 +1,46 @@
+conky.config = {
+    alignment = 'bm',
+    background = false, -- P
+    border_width = 0,
+    cpu_avg_samples = 2,
+	default_color = '#839496',
+    default_outline_color = '#839496',
+    default_shade_color = 'blue',
+    draw_borders = true,
+    draw_graph_borders = true,
+    draw_shades = false,
+    use_xft = true,
+    font = 'DeJavu Sans Mono:size=16',
+    gap_x = 0,
+    gap_y = 56,
+    minimum_height = 5,
+    net_avg_samples = 2,
+    no_buffers = true,
+    out_to_console = false,
+    out_to_stderr = false,
+    extra_newline = false,
+    own_window = true,
+    own_window_transparent = true,
+    own_window_class = 'override',
+    own_window_type = 'override',
+    own_window_hints = 'below',
+    own_window_argb_visual = true,
+    update_interval = 1.0,
+    uppercase = false,
+    use_spacer = 'none',
+    show_graph_scale = true,
+    show_graph_range = false,
+    double_buffer = true
+}
+
+conky.text = [[${font DeJavu Sans Mono:size=16}
+${top pid 1} ${color 93A1A1}${top name 1}$color ${top cpu 1} ${top mem 1} ${top mem_res 1}${goto 600}${top mem_vsize 1}${goto 700}${top time 1}
+${top pid 2} ${color 93A1A1}${top name 2}$color ${top cpu 2} ${top mem 2} ${top mem_res 2}${goto 600}${top mem_vsize 2}${goto 700}${top time 2}
+${top pid 3} ${color 93A1A1}${top name 3}$color ${top cpu 3} ${top mem 3} ${top mem_res 3}${goto 600}${top mem_vsize 3}${goto 700}${top time 3}
+${top pid 4} ${color 93A1A1}${top name 4}$color ${top cpu 4} ${top mem 4} ${top mem_res 4}${goto 600}${top mem_vsize 4}${goto 700}${top time 4}
+${top pid 5} ${color 93A1A1}${top name 5}$color ${top cpu 5} ${top mem 5} ${top mem_res 5}${goto 600}${top mem_vsize 5}${goto 700}${top time 5}
+${top pid 6} ${color 93A1A1}${top name 6}$color ${top cpu 6} ${top mem 6} ${top mem_res 6}${goto 600}${top mem_vsize 6}${goto 700}${top time 6}
+${top pid 7} ${color 93A1A1}${top name 7}$color ${top cpu 7} ${top mem 7} ${top mem_res 7}${goto 600}${top mem_vsize 7}${goto 700}${top time 7}
+${top pid 8} ${color 93A1A1}${top name 8}$color ${top cpu 8} ${top mem 8} ${top mem_res 8}${goto 600}${top mem_vsize 8}${goto 700}${top time 8}
+${top pid 9} ${color 93A1A1}${top name 9}$color ${top cpu 9} ${top mem 9} ${top mem_res 9}${goto 600}${top mem_vsize 9}${goto 700}${top time 9}
+${top pid 10} ${color 93A1A1}${top name 10}$color ${top cpu 10} ${top mem 10} ${top mem_res 10}${goto 600}${top mem_vsize 10}${goto 700}${top time 10}]]
